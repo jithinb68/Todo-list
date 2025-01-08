@@ -1,0 +1,110 @@
+.add-todo-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.to-do {
+  width: 600px;
+  text-align: center;
+}
+
+.to-do .title {
+  font-size: 32px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 16px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #000000;
+}
+
+.add-btn {
+  padding: 8px 32px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+}
+
+.edit-btn,
+.delete-btn {
+  margin-left: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: rgb(140, 16, 16);
+}
+
+.circle {
+  min-width: 20px;
+  min-height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.circle.checked {
+  background-color: #4caf50; /* Green background */
+  border-color: #4caf50;
+}
+
+.circle.checked::after {
+  content: "✔"; /* Checkmark */
+  color: white;
+  font-size: 12px;
+}
+
+.todo-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+}
