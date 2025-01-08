@@ -1,5 +1,7 @@
 ToDo App
 
+Deployed using vercel here - https://todo-private.vercel.app/
+
 This is a simple ToDo app that allows users to add, delete, mark as complete, and edit their ToDo items. The app uses React for the frontend, Redux for state management, and Vitest with React Testing Library for unit testing.
 
 Features / Functionalities
