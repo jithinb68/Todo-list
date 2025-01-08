@@ -39,7 +39,7 @@ Testing: The major components are covered by unit tests using Vitest and React T
 How to Run the Project
 
 1. Clone the repository
-   git clone https://github.com/your-username/todo-app.git
+   git clone https://github.com/jithinb68/Todo-list/tree/main
 
 2. Install dependencies
    npm install
