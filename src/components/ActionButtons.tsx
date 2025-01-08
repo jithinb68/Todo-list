@@ -1,5 +1,6 @@
 import React from "react";
-import { messages } from "../constants/messages";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEdit, faSave, faTrash } from "@fortawesome/free-solid-svg-icons";
 
 interface ActionButtonsProps {
   isEditing: boolean;
@@ -14,14 +15,16 @@ const ActionButtons: React.FC<ActionButtonsProps> = ({
 }) => {
   return (
     <div className="button-wrapper">
-      <button onClick={onEdit} className="edit-btn">
-        {isEditing
-          ? messages.components.ToDo.save
-          : messages.components.ToDo.edit}
-      </button>
-      <button onClick={onRemove} className="delete-btn">
-        {messages.components.ToDo.delete}
-      </button>
+      <div onClick={onEdit} className="edit-btn">
+        {isEditing ? (
+          <FontAwesomeIcon icon={faSave} />
+        ) : (
+          <FontAwesomeIcon icon={faEdit} />
+        )}
+      </div>
+      <div onClick={onRemove} className="delete-btn">
+        <FontAwesomeIcon icon={faTrash} />
+      </div>
     </div>
   );
 };
